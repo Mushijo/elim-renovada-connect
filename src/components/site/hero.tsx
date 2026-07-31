@@ -15,11 +15,11 @@ export function Hero() {
         fetchPriority="high"
         className="absolute inset-0 h-full w-full object-cover"
       />
-      <div className="absolute inset-0 bg-ink/70" />
       <div
         className="absolute inset-0"
-        style={{ background: "linear-gradient(180deg, oklch(0.12 0.006 60 / 0.75), oklch(0.12 0.006 60 / 0.35) 45%, oklch(0.12 0.006 60 / 0.9))" }}
+        style={{ background: "linear-gradient(180deg, oklch(0.12 0.006 60 / 0.62), oklch(0.12 0.006 60 / 0.3) 45%, oklch(0.12 0.006 60 / 0.85))" }}
       />
+
 
       <div className="relative mx-auto w-full max-w-7xl px-5 pt-32 pb-24 lg:px-8">
         <motion.p
