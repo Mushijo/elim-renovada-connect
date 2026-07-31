@@ -67,8 +67,8 @@ export function Gallery() {
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0.96, opacity: 0 }}
               transition={{ duration: 0.35, ease: [0.22, 1, 0.36, 1] }}
-              src={gallery[active].src}
-              alt={gallery[active].alt}
+              src={gallery[active]!.src}
+              alt={gallery[active]!.alt}
               className="max-h-[85vh] max-w-full rounded-3xl object-contain"
               onClick={(e) => e.stopPropagation()}
             />
