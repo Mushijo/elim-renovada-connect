@@ -1,24 +1,79 @@
 import { createFileRoute } from "@tanstack/react-router";
 
-// No head() here: the home route inherits title/description/og/twitter from
-// __root.tsx, and ships no og:image so serve-time hosting can inject the
-// project's social preview (explicit og:image or latest screenshot).
+import { About } from "@/components/site/about";
+import { Testimonials, Timeline } from "@/components/site/community";
+import { Contact } from "@/components/site/contact";
+import { Events } from "@/components/site/events";
+import { Faq } from "@/components/site/faq";
+import { FloatingActions, Loader } from "@/components/site/floating";
+import { Footer } from "@/components/site/footer";
+import { Gallery } from "@/components/site/gallery";
+import { Hero } from "@/components/site/hero";
+import { Location } from "@/components/site/location";
+import { Ministries } from "@/components/site/ministries";
+import { Navbar } from "@/components/site/navbar";
+import { Sermons } from "@/components/site/sermons";
+import { Services } from "@/components/site/services";
+import { Verse } from "@/components/site/verse";
+import { church } from "@/data/site";
+
+const title = "Igreja Batista Renovada Elim | Cultos, Ministérios e Comunhão";
+const description =
+  "Conheça a Igreja Batista Renovada Elim: cultos, ministérios, eventos e mensagens. Um lugar para crescer em Deus e viver em comunhão.";
+
 export const Route = createFileRoute("/")({
+  head: () => ({
+    meta: [
+      { title },
+      { name: "description", content: description },
+      { property: "og:title", content: title },
+      { property: "og:description", content: description },
+      { property: "og:type", content: "website" },
+      { property: "og:url", content: "/" },
+      { name: "twitter:card", content: "summary_large_image" },
+    ],
+    links: [{ rel: "canonical", href: "/" }],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Church",
+          name: church.name,
+          description,
+          address: church.address,
+          telephone: church.phone,
+          email: church.email,
+          sameAs: [church.social.instagram, church.social.facebook, church.social.youtube],
+        }),
+      },
+    ],
+  }),
   component: Index,
 });
 
-// IMPORTANT: Replace this placeholder. See ./README.md for routing conventions.
 function Index() {
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
-    </div>
+    <>
+      <Loader />
+      <Navbar />
+      <main>
+        <Hero />
+        <About />
+        <Ministries />
+        <Services />
+        <Events />
+        <Sermons />
+        <Verse />
+        <Gallery />
+        <Testimonials />
+        <Timeline />
+        <Location />
+        <Faq />
+        <Contact />
+      </main>
+      <Footer />
+      <FloatingActions />
+    </>
   );
 }
