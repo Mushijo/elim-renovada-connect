@@ -69,14 +69,14 @@ export function Contact() {
                     Nome
                   </label>
                   <input id="name" name="name" className={`mt-2 ${fieldClass}`} placeholder="Seu nome completo" />
-                  {errors.name ? <p className="mt-1.5 text-xs text-destructive">{errors.name}</p> : null}
+                  {errors['name'] ? <p className="mt-1.5 text-xs text-destructive">{errors['name']}</p> : null}
                 </div>
                 <div>
                   <label htmlFor="phone" className="text-xs font-semibold uppercase tracking-[0.16em]">
                     Telefone
                   </label>
                   <input id="phone" name="phone" className={`mt-2 ${fieldClass}`} placeholder="(00) 00000-0000" />
-                  {errors.phone ? <p className="mt-1.5 text-xs text-destructive">{errors.phone}</p> : null}
+                  {errors['phone'] ? <p className="mt-1.5 text-xs text-destructive">{errors['phone']}</p> : null}
                 </div>
               </div>
 
@@ -85,7 +85,7 @@ export function Contact() {
                   E-mail
                 </label>
                 <input id="email" name="email" className={`mt-2 ${fieldClass}`} placeholder="voce@email.com" />
-                {errors.email ? <p className="mt-1.5 text-xs text-destructive">{errors.email}</p> : null}
+                {errors['email'] ? <p className="mt-1.5 text-xs text-destructive">{errors['email']}</p> : null}
               </div>
 
               <div className="mt-5">
@@ -99,7 +99,7 @@ export function Contact() {
                   className={`mt-2 resize-none ${fieldClass}`}
                   placeholder="Como podemos orar por você?"
                 />
-                {errors.message ? <p className="mt-1.5 text-xs text-destructive">{errors.message}</p> : null}
+                {errors['message'] ? <p className="mt-1.5 text-xs text-destructive">{errors['message']}</p> : null}
               </div>
 
               <button
