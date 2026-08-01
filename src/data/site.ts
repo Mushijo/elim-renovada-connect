@@ -113,7 +113,7 @@ export const sermons = [
   {
     id: "quando-deus-reescreve",
     title: "Quando Deus reescreve a sua história",
-    preacher: "Pr. Marcos Andrade",
+    preacher: "Bispo Jorge Henrique",
     date: "21 de julho de 2026",
     image: sermon1,
     youtubeId: "",
@@ -121,7 +121,7 @@ export const sermons = [
   {
     id: "adoracao-que-agrada",
     title: "A adoração que agrada ao Pai",
-    preacher: "Pra. Juliana Andrade",
+    preacher: "Pastora Fatima Pinheiro",
     date: "14 de julho de 2026",
     image: sermon2,
     youtubeId: "",
@@ -129,7 +129,7 @@ export const sermons = [
   {
     id: "comunhao-verdadeira",
     title: "Comunhão verdadeira em tempos difíceis",
-    preacher: "Pr. Daniel Ribeiro",
+    preacher: "Pastor Carlos",
     date: "07 de julho de 2026",
     image: sermon3,
     youtubeId: "",
