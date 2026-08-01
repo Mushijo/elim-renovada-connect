@@ -113,19 +113,19 @@ export const events = [
 /** Preparado para integração com a API do YouTube: basta preencher `youtubeId`. */
 export const sermons = [
   {
-    id: "quando-deus-reescreve",
-    title: "Quando Deus reescreve a sua história",
-    preacher: "Bispo Jorge Henrique",
-    date: "21 de julho de 2026",
-    image: sermon1,
-    youtubeId: "",
-  },
-  {
     id: "adoracao-que-agrada",
     title: "A adoração que agrada ao Pai",
     preacher: "Pastora Fatima Pinheiro",
+    date: "21 de julho de 2026",
+    image: pastoraFatima.url,
+    youtubeId: "",
+  },
+  {
+    id: "quando-deus-reescreve",
+    title: "Quando Deus reescreve a sua história",
+    preacher: "Bispo Jorge Henrique",
     date: "14 de julho de 2026",
-    image: sermon2,
+    image: bispoJorge.url,
     youtubeId: "",
   },
   {
