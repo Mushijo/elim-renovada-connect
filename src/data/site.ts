@@ -12,23 +12,25 @@ import event3 from "@/assets/event-3.jpg";
 import gallery1 from "@/assets/gallery-1.jpg";
 import gallery2 from "@/assets/gallery-2.jpg";
 import gallery3 from "@/assets/gallery-3.jpg";
-import sermon1 from "@/assets/sermon-1.jpg";
+
 import sermon2 from "@/assets/sermon-2.jpg";
 import sermon3 from "@/assets/sermon-3.jpg";
+import bispoJorge from "@/assets/bispo-jorge.png.asset.json";
+import pastoraFatima from "@/assets/pastora-fatima.png.asset.json";
 
 export const church = {
   name: "Igreja Batista Renovada Elim",
   shortName: "Elim",
   tagline: "Um lugar para crescer em Deus, viver em comunhão e experimentar uma nova história.",
   address: "Estr. do Camboatá, 1980 - Deodoro, Rio de Janeiro - RJ, 21665-001",
-  phone: "(21) 4002-8922",
-  whatsapp: "552140028922",
+  phone: "(21) 99145-1101",
+  whatsapp: "5521991451101",
   email: "contato@ibrelim.com.br",
   mapsQuery: "Igreja Batista Renovada Elim, Estrada do Camboatá 1980, Deodoro, Rio de Janeiro",
   social: {
     instagram: "https://www.instagram.com/ibreoficial/",
-    facebook: "https://facebook.com",
-    youtube: "https://youtube.com",
+    facebook: "https://www.facebook.com/IBREoficial/",
+    youtube: "https://www.youtube.com/@igrejabatistarenovadaelim8853",
   },
 } as const;
 
@@ -111,19 +113,19 @@ export const events = [
 /** Preparado para integração com a API do YouTube: basta preencher `youtubeId`. */
 export const sermons = [
   {
-    id: "quando-deus-reescreve",
-    title: "Quando Deus reescreve a sua história",
-    preacher: "Bispo Jorge Henrique",
-    date: "21 de julho de 2026",
-    image: sermon1,
-    youtubeId: "",
-  },
-  {
     id: "adoracao-que-agrada",
     title: "A adoração que agrada ao Pai",
     preacher: "Pastora Fatima Pinheiro",
+    date: "21 de julho de 2026",
+    image: pastoraFatima.url,
+    youtubeId: "",
+  },
+  {
+    id: "quando-deus-reescreve",
+    title: "Quando Deus reescreve a sua história",
+    preacher: "Bispo Jorge Henrique",
     date: "14 de julho de 2026",
-    image: sermon2,
+    image: bispoJorge.url,
     youtubeId: "",
   },
   {
