@@ -12,7 +12,7 @@ import event3 from "@/assets/event-3.jpg";
 import gallery1 from "@/assets/gallery-1.jpg";
 import gallery2 from "@/assets/gallery-2.jpg";
 import gallery3 from "@/assets/gallery-3.jpg";
-import sermon1 from "@/assets/sermon-1.jpg";
+
 import sermon2 from "@/assets/sermon-2.jpg";
 import sermon3 from "@/assets/sermon-3.jpg";
 import bispoJorge from "@/assets/bispo-jorge.png.asset.json";
