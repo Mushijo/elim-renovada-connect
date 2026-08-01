@@ -23,14 +23,14 @@ export const church = {
   shortName: "Elim",
   tagline: "Um lugar para crescer em Deus, viver em comunhão e experimentar uma nova história.",
   address: "Estr. do Camboatá, 1980 - Deodoro, Rio de Janeiro - RJ, 21665-001",
-  phone: "(21) 4002-8922",
-  whatsapp: "552140028922",
+  phone: "(21) 99145-1101",
+  whatsapp: "5521991451101",
   email: "contato@ibrelim.com.br",
   mapsQuery: "Igreja Batista Renovada Elim, Estrada do Camboatá 1980, Deodoro, Rio de Janeiro",
   social: {
     instagram: "https://www.instagram.com/ibreoficial/",
-    facebook: "https://facebook.com",
-    youtube: "https://youtube.com",
+    facebook: "https://www.facebook.com/IBREoficial/",
+    youtube: "https://www.youtube.com/@igrejabatistarenovadaelim8853",
   },
 } as const;
 
