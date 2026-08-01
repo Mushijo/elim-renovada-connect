@@ -15,6 +15,8 @@ import gallery3 from "@/assets/gallery-3.jpg";
 import sermon1 from "@/assets/sermon-1.jpg";
 import sermon2 from "@/assets/sermon-2.jpg";
 import sermon3 from "@/assets/sermon-3.jpg";
+import bispoJorge from "@/assets/bispo-jorge.png.asset.json";
+import pastoraFatima from "@/assets/pastora-fatima.png.asset.json";
 
 export const church = {
   name: "Igreja Batista Renovada Elim",
