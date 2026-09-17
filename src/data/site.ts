@@ -49,7 +49,7 @@ export const about = {
   mission:
     "Anunciar o evangelho de Jesus Cristo com excelência e amor, formando discípulos comprometidos com a Palavra, com a família e com a cidade.",
   vision:
-    "Ser uma igreja relevante em cada geração, conhecida pelo acolhimento, pela reverência a Deus e pelo impacto transformador na comunidade.",
+    "“Levanta-te, resplandece, porque a tua luz chegou, e a glória do Senhor raiou sobre ti” (Isaías 60:1). Ser uma igreja que irradia a luz de Cristo, refletindo a glória de Deus e atraindo todos os povos e gerações para Ele.",
   values: [
     "Fidelidade à Palavra",
     "Adoração com reverência",
