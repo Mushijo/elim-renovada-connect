@@ -1,0 +1,51 @@
+{
+  "version": 1,
+  "sdk_version": "3.0.5",
+  "path": "/mcp",
+  "auth": {
+    "type": "none"
+  },
+  "mcp": {
+    "server": {
+      "name": "elim-renovada-connect",
+      "version": "0.1.0",
+      "title": "Elim Renovada Connect"
+    },
+    "tools": [
+      {
+        "name": "get_church_info",
+        "title": "Informações da igreja",
+        "description": "Retorna endereço, contatos, redes sociais, missão, visão, valores e horários de culto da Igreja Batista Renovada Elim.",
+        "annotations": {
+          "readOnlyHint": true,
+          "idempotentHint": true,
+          "openWorldHint": false
+        },
+        "inputSchema": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "object",
+          "properties": {},
+          "additionalProperties": false
+        },
+        "outputSchema": null
+      },
+      {
+        "name": "get_church_activities",
+        "title": "Eventos, ministérios e mensagens",
+        "description": "Lista os próximos eventos, ministérios, mensagens recentes e perguntas frequentes da igreja.",
+        "annotations": {
+          "readOnlyHint": true,
+          "idempotentHint": true,
+          "openWorldHint": false
+        },
+        "inputSchema": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "object",
+          "properties": {},
+          "additionalProperties": false
+        },
+        "outputSchema": null
+      }
+    ]
+  }
+}
